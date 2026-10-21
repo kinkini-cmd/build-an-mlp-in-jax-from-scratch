@@ -62,8 +62,9 @@ def init_mlp_params(key, layer_sizes, scale=0.1):
         )
     return params
 
-# Step 9 - linear_forward (not yet solved)
-# TODO: implement
+# Step 9 - linear_forward
+def linear_forward(x, layer_params):
+    return jnp.dot(x, layer_params['W']) + layer_params['b']
 
 # Step 10 - relu_activation (not yet solved)
 # TODO: implement
